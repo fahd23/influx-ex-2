@@ -3,7 +3,7 @@ import React from "react";
 const ItemCollapsed = ({ item }) => {
   return (
     <div>
-      <div className="items-collapsed">
+      <div className="items-collapsed" key={item.id}>
         <div className="img-section">
           <img
             className="item-img"

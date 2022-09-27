@@ -5,7 +5,7 @@ import ItemCollapsed from "./ItemCollapsed";
 const ItemCard = ({ item }) => {
   const [collapsed, setCollapsed] = useState(false);
   return (
-    <div className="card-container" key={item.id}>
+    <div className="card-container">
       <img
         className="card-img"
         src={item.fnbtabs_images[0].imageurl}
@@ -20,13 +20,15 @@ const ItemCard = ({ item }) => {
           onClick={() => setCollapsed((state) => !state)}
         ></i>
       </div>
-      {collapsed && (
-        <div>
-          {item.fnbtabs_items.map((item) => (
-            <ItemCollapsed item={item} />
-          ))}
-        </div>
-      )}
+      <div>
+        {collapsed && (
+          <div>
+            {item.fnbtabs_items.map((item) => (
+              <ItemCollapsed item={item} key={item.id} />
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 };

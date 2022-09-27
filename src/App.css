@@ -10,3 +10,18 @@ body {
   width: 75%;
   margin: 1.2rem auto;
 }
+.flex {
+  display: flex;
+}
+.js-spce-btwn {
+  justify-content: space-between;
+}
+.padding-1rem {
+  padding: 1rem;
+}
+.padding-10px {
+  padding: 10px;
+}
+.padding-btm-5px {
+  padding-bottom: 5px;
+}
