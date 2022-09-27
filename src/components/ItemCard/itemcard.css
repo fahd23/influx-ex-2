@@ -1,0 +1,73 @@
+.card-container {
+  margin: 1.5rem 1rem;
+  width: 36rem;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 1px 0px 4px 1px #d3d3d3;
+}
+.card-img {
+  width: 36rem;
+  height: 13.5rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.item-name {
+  font-weight: 700;
+}
+.card-footer {
+  padding: 12px 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.down-arrow {
+  transform: rotate(90deg);
+}
+.items-collapsed {
+  display: flex;
+  width: 36rem;
+  padding: 10px;
+}
+.img-section {
+  display: flex;
+}
+.item-img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 8px;
+}
+.item-desc-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 25.8rem;
+}
+.addcart-btn {
+  padding: 6px 24px;
+  color: #fff;
+  background-color: rgb(188, 0, 0);
+  border: 1px solid transparent;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.btn-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+.item-desc div h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.item-desc div .grey-text {
+  font-size: 0.9rem;
+  color: grey;
+}
+.item-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+}

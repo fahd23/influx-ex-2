@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(243, 243, 243);
+}
+.app {
+  width: 75%;
+  margin: 1.2rem auto;
+}

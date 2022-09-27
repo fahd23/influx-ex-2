@@ -1,0 +1,13 @@
+.tab-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  cursor: pointer;
+  margin: 2rem auto;
+  font-weight: 600;
+}
+.main-section {
+  display: flex;
+  justify-content: space-around;
+}

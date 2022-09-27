@@ -1,0 +1,25 @@
+.cart-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  width: 28rem;
+  height: 14rem;
+  margin: 1.5rem 1rem;
+  padding: 1rem 4rem;
+  box-shadow: 1px 0px 4px 1px #d3d3d3;
+}
+.title {
+  font-size: 1.5rem;
+}
+.cart-img {
+  font-size: 2.7rem;
+  color: grey;
+}
+.cart-desc {
+  color: grey;
+  text-align: center;
+}
