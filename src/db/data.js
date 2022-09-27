@@ -1,4 +1,4 @@
-export const data = [
+const data = [
   {
     id: "3d7dbd90-dba5-4b93-a9b7-9e0d897c4f86",
     cinemaid: "cfc43f9b-897d-4be8-88ca-05d042b4d0b7",
@@ -7385,3 +7385,5 @@ export const data = [
     order: 80,
   },
 ];
+
+export default data;

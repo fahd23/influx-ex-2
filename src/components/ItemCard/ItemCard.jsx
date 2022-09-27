@@ -1,18 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import "./itemcard.css";
+import ItemCollapsed from "./ItemCollapsed";
 
-const ItemCard = () => {
+const ItemCard = ({ item }) => {
+  const [collapsed, setCollapsed] = useState(false);
   return (
-    <div className="card-container">
+    <div className="card-container" key={item.id}>
       <img
         className="card-img"
-        src="https://spi-assets-01.s3.us-east-2.amazonaws.com/images/platforms/51554d3a-67ee-41c9-be23-5dbda46a5b48.png"
-        alt="item"
+        src={item.fnbtabs_images[0].imageurl}
+        alt={item.fnbtabs_images[0].description}
       />
       <div className="card-footer">
-        <p className="item-name">Popcorn</p>
-        <p className="down-arrow">{">"}</p>
+        <p className="item-name">{item.tabName}</p>
+        <i
+          className={
+            collapsed ? `fa-solid fa-chevron-up` : `fa-solid fa-chevron-down`
+          }
+          onClick={() => setCollapsed((state) => !state)}
+        ></i>
       </div>
+      {collapsed && (
+        <div>
+          {item.fnbtabs_items.map((item) => (
+            <ItemCollapsed item={item} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };

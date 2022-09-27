@@ -1,10 +1,10 @@
 import "./App.css";
-import ItemCard from "./components/ItemCard/ItemCard";
+import HomePage from "./Pages/HomePage/HomePage";
 
 function App() {
   return (
-    <div className="App">
-      <ItemCard />
+    <div className="app">
+      <HomePage />
     </div>
   );
 }
