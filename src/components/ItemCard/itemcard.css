@@ -1,13 +1,13 @@
 .card-container {
   margin: 1.5rem 1rem;
-  width: 36rem;
+  width: 33rem;
   background-color: #fff;
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 1px 0px 4px 1px #d3d3d3;
 }
 .card-img {
-  width: 36rem;
+  width: 33rem;
   height: 13.5rem;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -26,7 +26,7 @@
 }
 .items-collapsed {
   display: flex;
-  width: 36rem;
+  width: 33rem;
   padding: 10px;
 }
 .img-section {
@@ -42,7 +42,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  width: 25.8rem;
+  width: 23rem;
 }
 .addcart-btn {
   padding: 6px 24px;
@@ -51,6 +51,7 @@
   border: 1px solid transparent;
   font-weight: 600;
   border-radius: 5px;
+  cursor: pointer;
 }
 .btn-section {
   display: flex;
