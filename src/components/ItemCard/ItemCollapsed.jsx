@@ -2,7 +2,10 @@ import React from "react";
 import { useCart } from "../../context/cart-context";
 
 const ItemCollapsed = ({ item }) => {
-  const { cartDispatch } = useCart();
+  const {
+    cartState: { cart },
+    cartDispatch,
+  } = useCart();
   return (
     <div>
       <div className="items-collapsed" key={item.id}>
@@ -30,7 +33,9 @@ const ItemCollapsed = ({ item }) => {
                   });
                 }}
               >
-                Add +
+                {cart.find((i) => i.product.id === item.id)
+                  ? "Remove"
+                  : "Add +"}
               </button>
               <p>To Be Picked-up</p>
             </div>
