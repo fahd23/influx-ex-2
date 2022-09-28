@@ -1,6 +1,8 @@
 import React from "react";
+import { useCart } from "../../context/cart-context";
 
 const ItemCollapsed = ({ item }) => {
+  const { cartDispatch } = useCart();
   return (
     <div>
       <div className="items-collapsed" key={item.id}>
@@ -19,7 +21,17 @@ const ItemCollapsed = ({ item }) => {
           <div className="item-desc-footer">
             <p>$ {item.valuebeforetax}</p>
             <div className="btn-section">
-              <button className="addcart-btn">Add +</button>
+              <button
+                className="addcart-btn"
+                onClick={() => {
+                  cartDispatch({
+                    type: "ADD_TO_CART",
+                    payload: item,
+                  });
+                }}
+              >
+                Add +
+              </button>
               <p>To Be Picked-up</p>
             </div>
           </div>
