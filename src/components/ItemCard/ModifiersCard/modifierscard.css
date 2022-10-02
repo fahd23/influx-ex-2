@@ -1,0 +1,40 @@
+.modifiers-card {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  min-width: 28rem;
+  min-height: 14rem;
+  margin: 1.5rem 1rem;
+  box-shadow: 1px 0px 4px 1px #d3d3d3;
+}
+.modifiers-img {
+  height: 14rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+section {
+  padding: 10px;
+}
+.quantity-section {
+  padding: 0 10px;
+}
+.add-to-cart-btn {
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 13px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: rgb(188, 0, 0);
+  border: 1px solid transparent;
+  font-weight: 600;
+  cursor: pointer;
+}
+textarea {
+  resize: none;
+  padding: 1rem;
+}
