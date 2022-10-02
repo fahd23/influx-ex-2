@@ -16,6 +16,15 @@ body {
 .js-spce-btwn {
   justify-content: space-between;
 }
+.align-i-c {
+  align-items: center;
+}
+.flex-d-clm {
+  flex-direction: column;
+}
+.gap-10px {
+  gap: 10px;
+}
 .padding-1rem {
   padding: 1rem;
 }
@@ -24,4 +33,15 @@ body {
 }
 .padding-btm-5px {
   padding-bottom: 5px;
+}
+.cart-management-btn {
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 0;
+  border-radius: 50%;
+  color: red;
+  background-color: transparent;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  cursor: pointer;
 }

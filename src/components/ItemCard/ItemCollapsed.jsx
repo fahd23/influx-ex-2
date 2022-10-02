@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { useCart } from "../../context/cart-context";
+import ModifiersCard from "./ModifiersCard/ModifiersCard";
+import "./itemcard.css";
 
 const ItemCollapsed = ({ item }) => {
   const {
     cartState: { cart },
     cartDispatch,
   } = useCart();
+  const [modal, setModal] = useState(false);
   return (
     <div>
       <div className="items-collapsed" key={item.id}>
@@ -27,10 +30,13 @@ const ItemCollapsed = ({ item }) => {
               <button
                 className="addcart-btn"
                 onClick={() => {
-                  cartDispatch({
-                    type: "ADD_TO_CART",
-                    payload: item,
-                  });
+                  item.modifierGroups.length === 0 &&
+                    cartDispatch({
+                      type: "ADD_TO_CART",
+                      payload: item,
+                    });
+                  item.modifierGroups.length !== 0 &&
+                    setModal((state) => !state);
                 }}
               >
                 {cart.find((i) => i.product.id === item.id)
@@ -43,6 +49,9 @@ const ItemCollapsed = ({ item }) => {
         </div>
       </div>
       <hr />
+      <div className={modal ? "modifiers-modal" : "display-none"}>
+        {item.modifierGroups.length !== 0 && <ModifiersCard item={item} />}
+      </div>
     </div>
   );
 };
